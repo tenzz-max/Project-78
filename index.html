@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body style="text-align: center; font-family: cursive;">
+            <h1>
+                The Family Book
+            </h1>
+
+            <img src="Griffins.jpeg" style="width: 30%; border-radius: 15px; border-color: black; border-width: 2px; border-style: double;;" 
+            id="pic">
+            <h4 style="font-family: inherit;" id="name"></h4>
+            <button style="font-family: inherit;" onclick="next();">Next</button>
+    </body>
+    <script>
+        var family_members = ["Peter Griffin", "Lois Griffin", "Chris_Griffin", "Meg_Griffin", "Stewie_Griffin", "Brian Griffin"];
+        var pic = ["Peter Griffin", "Lois Griffin", "Chris_Griffin", "Meg_Griffin", "Stewie_Griffin", "Brian Griffin"];
+        var i = 0;
+            function next()
+            {
+                i++;
+                var family_member_number = 6
+                if(i > family_member_number )
+                {
+                    i = 0;
+                }
+                var nextpic = images[i];
+                var nextname  = names[i];
+                document.getElementById("pic").src = nextpic;
+                document.getElementById("name").innerHTML = nextname;
+            }
+
+
+    </script>
+</html>
